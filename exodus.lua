@@ -281,8 +281,9 @@ RarityGroup:AddLabel("Unobtainable", false, Color3.fromRGB(15, 15, 15))
 
 --[Credits]--
 MusicGroup:AddToggle("MusicToggle", {
-	Text = "Music ON/OFF",
+	Text = "Music OFF/ON",
 	default = true
+    })
 
 InformationGroup:AddLabel("Executor: " .. GetExploit())
 InformationGroup:AddLabel("Premium: Yes")
@@ -440,15 +441,12 @@ task.spawn(function()
 		end
 	end
 end)
-		task.spawn(function()
+task.spawn(function()
 	while task.wait() do
 		if Toggles.MusicToggle.Value then
 			game.Workspace.Sound.Volume = 0.5
-					else
-						game.Workspace.Sound.Volume = 0
-				end
-				task.wait(1)
-			end
+		else
+			game.Workspace.Sound.Volume = 0
 		end
 	end
 end)
