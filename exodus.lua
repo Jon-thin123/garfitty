@@ -150,6 +150,7 @@ local RarityGroup = MainTab:AddRightGroupbox("Rarities")
 
 local InformationGroup = HomeTab:AddLeftGroupbox("Information")
 local ChangelogsGroup = HomeTab:AddRightGroupbox("Changelogs")
+local MusicGroup = HomeTab:AddLeftGroupbox("Music Toggle")
 
 local MenuGroup = SettingsTab:AddLeftGroupbox("Menu")
 local DeveloperGroup = CreditsTab:AddLeftGroupbox("Developers")
@@ -279,6 +280,9 @@ RarityGroup:AddLabel("Diamond", false, Color3.fromRGB(16, 175, 206))
 RarityGroup:AddLabel("Unobtainable", false, Color3.fromRGB(15, 15, 15))
 
 --[Credits]--
+MusicGroup:AddToggle("MusicToggle", {
+	Text = "Music ON/OFF",
+	default = true
 
 InformationGroup:AddLabel("Executor: " .. GetExploit())
 InformationGroup:AddLabel("Premium: Yes")
@@ -432,6 +436,18 @@ task.spawn(function()
 					CasesOpenedLabel:SetText("Cases Opened: " .. AddComma(CasesOpened))
 					Data.Experience.Changed:Wait()
 				end
+			end
+		end
+	end
+end)
+		task.spawn(function()
+	while task.wait() do
+		if Toggles.MusicToggle.Value then
+			game.Workspace.Sound.Volume = 0.5
+					else
+						game.Workspace.Sound.Volume = 0
+				end
+				task.wait(1)
 			end
 		end
 	end
