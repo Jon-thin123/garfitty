@@ -259,7 +259,7 @@ sound.SoundId = "rbxassetid://1840684208"
 
 sound.Looped = true;
 sound:Play();
-sound.Volume = 2;
+sound.Volume = 0.5;
 
 --[]--
 
