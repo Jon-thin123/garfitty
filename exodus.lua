@@ -78,9 +78,9 @@ local Library = loadstring(game:HttpGet(Repository .. "Library.lua"))()
 local ThemeManager = loadstring(game:HttpGet(Repository .. "Addons/ThemeManager.lua"))()
 local SaveManager = loadstring(game:HttpGet(Repository .. "Addons/SaveManager.lua"))()
 
-local ScriptVersion = "4.2.0"
+local ScriptVersion = "4.2.1"
 local LastUpdate = "4/12/2023"
-local Game = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | Go Get a Fuckin' Life!";
+local Game = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | practisedd u suck";
 
 --[Locals]--
 
