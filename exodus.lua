@@ -81,9 +81,6 @@ local SaveManager = loadstring(game:HttpGet(Repository .. "Addons/SaveManager.lu
 local ScriptVersion = "4.2.1"
 local LastUpdate = "the day!!"
 local Game = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | practisedd ur pin sucks"
-local Game1 = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | Go Get a Fuckin' Life!"
-local Game2 = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | slaughtahs is a cutie"
-local Game3 = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | i love yall!!";
 
 --[Locals]--
 
@@ -487,11 +484,11 @@ for _,v in next, Skins:GetChildren() do
 	end
 end
 while true do
-		Title = Game1
+		Title = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | Go Get a Fuckin' Life!"
 		wait(4)
-		Title = Game2
+		Title = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | slaughtahs is a cutie"
 		wait(4)
-		Title = Game3
+		Title = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | i love yall!!"
 		wait(4)
 	end
 
