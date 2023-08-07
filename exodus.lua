@@ -80,7 +80,7 @@ local SaveManager = loadstring(game:HttpGet(Repository .. "Addons/SaveManager.lu
 
 local ScriptVersion = "4.2.1"
 local LastUpdate = "the day!!"
-local Game = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | practisedd ur pin sucks"
+local Game = "Reroll.gg | System Sexodus | 4.2.1 | practisedd ur pin sucks"
 
 --[Locals]--
 
@@ -93,6 +93,7 @@ local Data = LocalPlayer.Data
 local Main = LocalPlayer.PlayerGui.UserInterface.Main
 local Holder = Main.Windows.Settings.Settings.Holder
 local Skins = Data.Inventory.Skins
+local messages = {"Reroll.gg | System Sexodus | 4.2.1 | practisedd ur pin sucks", "Reroll.gg | System Sexodus | "4.2.1 " | Go Get a Fuckin' Life!", "Reroll.gg | System Sexodus | " 4.2.1 " | slaughtahs is a cutie", "Reroll.gg | System Sexodus | " 4.2.1 " | i love yall!!"}
 
 --[Module Scripts]--
 
@@ -138,6 +139,12 @@ local Window = Library:CreateWindow({
 	Center = true,
 	AutoShow = true
 })
+while true do
+	  for _, v in pairs(messages) do
+          Title = v;
+          wait(5);
+    end;
+end;
 
 local HomeTab = Window:AddTab("Home")
 local MainTab = Window:AddTab("Main")
@@ -483,12 +490,5 @@ for _,v in next, Skins:GetChildren() do
 		end)
 	end
 end
-while true do
-		Title = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | Go Get a Fuckin' Life!"
-		wait(4)
-		Title = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | slaughtahs is a cutie"
-		wait(4)
-		Title = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | i love yall!!"
-		wait(4)
-	end
+
 
