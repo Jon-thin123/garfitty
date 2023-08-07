@@ -79,8 +79,11 @@ local ThemeManager = loadstring(game:HttpGet(Repository .. "Addons/ThemeManager.
 local SaveManager = loadstring(game:HttpGet(Repository .. "Addons/SaveManager.lua"))()
 
 local ScriptVersion = "4.2.1"
-local LastUpdate = "4/12/2023"
-local Game = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | practisedd u suck";
+local LastUpdate = "the day!!"
+local Game = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | practisedd ur pin sucks"
+local Game1 = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | Go Get a Fuckin' Life!"
+local Game2 = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | slaughtahs is a cutie"
+local Game3 = "Reroll.gg | System Sexodus | " .. ScriptVersion .. " | i love yall!!";
 
 --[Locals]--
 
@@ -156,6 +159,14 @@ local MenuGroup = SettingsTab:AddLeftGroupbox("Menu")
 local DeveloperGroup = CreditsTab:AddLeftGroupbox("Developers")
 local UILibraryGroup = CreditsTab:AddRightGroupbox("UI Library")
 local SponserGroup = CreditsTab:AddRightGroupbox("Sponsers")
+while true do
+		Title = Game1
+		wait(4)
+		Title = Game2
+		wait(4)
+		Title = Game3
+		wait(4)
+	end
 
 --[]--
 
@@ -283,7 +294,7 @@ RarityGroup:AddLabel("Unobtainable", false, Color3.fromRGB(15, 15, 15))
 MusicGroup:AddToggle("MusicToggle", {
 	Text = "Music OFF/ON",
 	default = true
-    })
+})
 
 InformationGroup:AddLabel("Executor: " .. GetExploit())
 InformationGroup:AddLabel("Premium: Yes")
@@ -361,7 +372,7 @@ Profit = Data.Balance.Value - StartBalance
 
 task.spawn(function()
 	repeat task.wait() until Options and Options.CaseSelection and Options.CaseSelection.Value
-	
+
 	while task.wait() do
 		CaseCost = CasesModule[Reverse(Options.CaseSelection.Value)][1]
 		if CaseCost ~= OldCaseCost then
