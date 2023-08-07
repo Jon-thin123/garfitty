@@ -140,6 +140,13 @@ local Window = Library:CreateWindow({
 	AutoShow = true
 })
 
+while wait() do
+	Title = "Hello"
+	wait(5)
+	Title = "Bye"
+	wait(5)
+	end
+
 
 local HomeTab = Window:AddTab("Home")
 local MainTab = Window:AddTab("Main")
