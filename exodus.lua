@@ -159,15 +159,6 @@ local MenuGroup = SettingsTab:AddLeftGroupbox("Menu")
 local DeveloperGroup = CreditsTab:AddLeftGroupbox("Developers")
 local UILibraryGroup = CreditsTab:AddRightGroupbox("UI Library")
 local SponserGroup = CreditsTab:AddRightGroupbox("Sponsers")
-while true do
-		Title = Game1
-		wait(4)
-		Title = Game2
-		wait(4)
-		Title = Game3
-		wait(4)
-	end
-
 --[]--
 
 CasesGroup:AddToggle("BuyCase", {
